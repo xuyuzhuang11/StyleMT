@@ -4,6 +4,6 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/xuyuzhuang11/StyleMT)](https://github.com/hiyouga/LLaMA-Factory/commits/main)
 [![GitHub pull request](https://img.shields.io/badge/PRs-welcome-blue)](https://github.com/xuyuzhuang11/StyleMT/pulls)
 
-The repository is the code and data for the paper "[Pluggable Neural Machine Translation Models via Memory-Augmented Adapters](https://arxiv.org/abs/2307.06029)".
+This repository is the code and data for the paper "[Pluggable Neural Machine Translation Models via Memory-Augmented Adapters](https://arxiv.org/abs/2307.06029)" accepted by LREC-COLING 2024.
 
 # This repo is set up on 20th March.
