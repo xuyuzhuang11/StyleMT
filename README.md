@@ -9,6 +9,15 @@ This repository is the code and data for the paper "[Pluggable Neural Machine Tr
 
 ## MTSC Data
 
+Machine Translation with Style Customization (MTSC) is a specialized dataset used for training and evaluating stylized machine translation models. This dataset includes stylized tasks in two different languages: Lu Xun style (Chinese, Zh) and Shakespeare style (English, En). Each style comes with a training set, a validation set, and a test set. For the training and validation sets, they consist of monolingual data in the target style. For the test set, it consists of data in the target style and manually annotated translations in the source language. The statistics for each style are as follows:
+
+| Style | Src-side Language | Tgt-side Language | Training Set | Validation Set | Test Set |
+| ----- | ----------------- | ----------------- | ------------ | -------------- | ------- |
+| Lu Xun | En | Zh | 37K | 500 | 500 |
+| Shakespeare | Zh | En | 20K | 500 | 500 |
+
+
+
 ## Installation
 
 ## Training
