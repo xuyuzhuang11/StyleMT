@@ -7,19 +7,19 @@
 
 This repository is the code and data for the paper "[Pluggable Neural Machine Translation Models via Memory-Augmented Adapters](https://arxiv.org/abs/2307.06029)" accepted by LREC-COLING 2024. The approach proposed in this paper is for customizing the style or domain property in machine translations. The main idea is adding pluggable and memory-augmented adapters (ours) into pretrained neural machine translation model and training the adapters with the proposed consistent training loss. In particular, the memory is constructed using multi-granularity phrases and the phrases is divided into different layers of Transformer model.
 
-# MTSC Data
+## MTSC Data
 
-# Installation
+## Installation
 
-# Training
+## Training
 
-# Testing
+## Testing
 
-# Issues
+## Issues
 
-# License
+## License
 
-# Citation
+## Citation
 
 If you found this work useful, either the proposed method or our dataset MTSC, please consider citing:
 
@@ -32,6 +32,6 @@ If you found this work useful, either the proposed method or our dataset MTSC, p
 }
 ```
 
-# Note
+## Note
 
 This repository is in preparing. Please wait for 3 days.
