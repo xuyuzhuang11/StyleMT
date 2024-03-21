@@ -17,16 +17,61 @@ Machine Translation with Style Customization (MTSC) is a specialized dataset use
 | Shakespeare | Zh | En | 20K | 500 | 500 |
 
 
-
 ## Installation
+
+We implement our model based on the open-source implementation of the transformer, [fairseq](https://github.com/facebookresearch/fairseq). To use these codes, you should clone this repository to your local machine, enter the code folder and install it.
+
+```bash
+git clone https://github.com/xuyuzhuang11/StyleMT.git
+cd StyleMT/fairseq-pro-StyleMT
+pip install -e .
+
+```
+
+Then, you can perform training or testing using these resources. Note that you must have modified the arguments in each script to suit your environment.
 
 ## Training
 
+You should firstly train the base NMT model using the script in `scripts/En-Zh` or `scripts/Zh-En`.
+
+Then, you can build the datastores of different layers:
+
+```bash
+bash prepare_KVs_of_layers.sh
+
+```
+
+Finally, you can train the memory-augmented adapters. Build the checkpoint and train it like this:
+
+```bash
+bash prepare_ckpt.sh
+bash tune-t2.sh
+
+```
+
 ## Testing
+
+You can use the following script to evaluate the translation quality:
+
+```bash
+bash test-t2.sh
+
+```
+
+The best scores of our proposed style customization with MTSC dataset are as follows till now:
+
+| Style | BLEU | PPL | Classifier Score |
+| ----- | ---- | --- | ---------------- |
+| Lu Xun | 21.3 | 199.6 | 53.2 |
+| Shakespeare | 21.8 | 95.1 | 85.2 |
 
 ## Issues
 
+Despite the considerable amount of time we spent on creating the MTSC dataset, low-level errors are still difficult to avoid. We welcome other researchers to help us improve the overall quality of the dataset, including correcting flaws, adding new languages, introducing new styles, etc. You are invited to contribute your insights through issues or pull requests (PRs). Furthermore, if you find any flaws in the code, you are welcome to get in touch with us.
+
 ## License
+
+This code and dataset are released under the MIT license, allowing you to freely use them within its framework. However, please note not to forget to cite the work as follows.
 
 ## Citation
 
@@ -40,7 +85,3 @@ If you found this work useful, either the proposed method or our dataset MTSC, p
   year={2023}
 }
 ```
-
-## Note
-
-This repository is in preparing. Please wait for 3 days.
