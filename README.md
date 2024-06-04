@@ -78,7 +78,7 @@ This code and dataset are released under the MIT license, allowing you to freely
 If you found this work useful, either the proposed method or our dataset MTSC, please consider citing:
 
 ```bibtex
-@inproceedings{xu-etal-2024-pluggable-neural,
+@inproceedings{xu2024pluggable,
     title = "Pluggable Neural Machine Translation Models via Memory-augmented Adapters",
     author = "Xu, Yuzhuang and Wang, Shuo and Li, Peng and Liu, Xuebo and Wang, Xiaolong and Liu, Weidong and Liu, Yang",
     booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
